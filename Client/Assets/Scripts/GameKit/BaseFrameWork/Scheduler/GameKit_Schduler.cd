@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Timer">
+    <Position X="4.75" Y="0.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAACAAQAAAAAAgAgAAAAAAAAAIAAAEABAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameKit\BaseFrameWork\Scheduler\Timer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scheduler">
+    <Position X="1.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAQAAAAAAAAAAAAAAAACAAQAAAAAIAIAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GameKit\BaseFrameWork\Scheduler\Scheduler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>
