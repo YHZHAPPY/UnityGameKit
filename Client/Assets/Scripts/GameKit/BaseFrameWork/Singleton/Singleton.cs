@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-/// <remarks>普通单例泛型</remarks>
+﻿/// <remarks>普通单例泛型</remarks>
 public abstract class Singleton<T> : IManager where T : new()
 {
     private static T instance;

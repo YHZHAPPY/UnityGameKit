@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AddressableManager">
+    <Position X="1.5" Y="3.5" Width="2.5" />
+    <AssociationLine Name="pool" Type="AddressablePool&lt;T&gt;">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.61" Y="0.06" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACAAAACABAAAAAAAECAAAAAEAAEABAAgEAgCAQAAAAM=</HashCode>
+      <FileName>Assets\Scripts\GameKit\Addressable\AddressableManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="pool" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AddressablePool&lt;T&gt;">
+    <Position X="5.5" Y="1.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="AddressablePool&lt;T&gt;.CacheList">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\GameKit\Addressable\AddressablePool.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAACAAAAYgAAAAQCEAAAAAEEIAAAAAQAI=</HashCode>
+      <FileName>Assets\Scripts\GameKit\Addressable\AddressablePool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="微软雅黑" Size="9" />
+</ClassDiagram>

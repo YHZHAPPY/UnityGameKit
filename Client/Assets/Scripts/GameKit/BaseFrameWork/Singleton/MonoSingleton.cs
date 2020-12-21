@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿
 using UnityEngine;
 /// <remarks>继承自Mono的泛型单例</remarks>
 public abstract class MonoSingleton<T> : MonoBehaviour, IManager where T : UnityEngine.Component

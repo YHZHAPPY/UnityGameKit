@@ -22,7 +22,8 @@ public class Scheduler:MonoSingleton<Scheduler>,IManager
         return timer;
     }
 
-    public Timer Repeat(float delay,Action task)
+    /// <remarks>无限循环</remarks>
+    public Timer Repeat(float delay, Action task)
     {
         Timer timer = new Timer(delay, -1, task);
         timer.ListNode = this.timers.AddLast(timer);
@@ -38,6 +39,7 @@ public class Scheduler:MonoSingleton<Scheduler>,IManager
         }
     }
 
+    /// <remarks>重启定时器</remarks>
     public void ReStart(Timer timer)
     {
         timer.ResetTime();
@@ -70,7 +72,14 @@ public class Scheduler:MonoSingleton<Scheduler>,IManager
         {
             var next = i.Next;
             var value = i.Value;
-            value.Update(Time.deltaTime);
+            if (value.Update(Time.deltaTime))
+            {
+                if (value.ListNode != null)
+                {
+                    this.timers.Remove(value.ListNode);
+                    value.ListNode = null;
+                }
+            }
             i = next;
         }
     }

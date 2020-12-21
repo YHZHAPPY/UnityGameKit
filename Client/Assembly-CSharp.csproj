@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameKit\Addressable\AddressableManager.cs" />
+    <Compile Include="Assets\Scripts\GameKit\Addressable\AddressablePool.cs" />
     <Compile Include="Assets\Scripts\GameKit\BaseFrameWork\Scheduler\Scheduler.cs" />
     <Compile Include="Assets\Scripts\GameKit\BaseFrameWork\Scheduler\Timer.cs" />
     <Compile Include="Assets\Scripts\GameKit\BaseFrameWork\Singleton\Helper.cs" />
@@ -70,6 +72,7 @@
     <Compile Include="Assets\Scripts\GameKit\BaseFrameWork\Singleton\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\GameKit\BaseFrameWork\Singleton\Singleton.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
+    <None Include="Assets\Scripts\GameKit\Addressable\Addressable.cd" />
     <None Include="Assets\Scripts\GameKit\BaseFrameWork\Scheduler\GameKit_Schduler.cd" />
     <None Include="Assets\Scripts\GameKit\BaseFrameWork\Singleton\GameKit_Singleton.cd" />
     <Reference Include="UnityEngine">
@@ -603,8 +606,17 @@
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEditor.CacheServer">
+      <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+      <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
@@ -612,29 +624,20 @@
     <Reference Include="Unity.Timeline">
       <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.CacheServer">
-      <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ScriptableBuildPipeline.Editor">
-      <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.ResourceManager">
-      <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Addressables.Editor">
       <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.CollabProxy.Editor">
+      <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Addressables">
       <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ScriptableBuildPipeline">
       <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>F:/Unity3D/Projects/UnityGameKit/Client/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

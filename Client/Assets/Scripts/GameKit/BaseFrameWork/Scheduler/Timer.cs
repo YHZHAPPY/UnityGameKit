@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 /// <remarks>定时器组件，设置延迟触发</remarks>
 public class Timer
@@ -18,6 +16,7 @@ public class Timer
     private float residueTime;
     /// <remarks>剩余重复次数</remarks>
     private int residueRepetTimes;
+
     public LinkedListNode<Timer> ListNode;
 
     private event System.Action task;
@@ -37,7 +36,7 @@ public class Timer
         this.residueRepetTimes = this.repetTimes;
     }
 
-    public void Update(float deltaTime)
+    public bool Update(float deltaTime)
     {
         this.residueTime -= deltaTime;
         if (this.residueTime <= 0f)
@@ -45,28 +44,28 @@ public class Timer
             try
             {
                 this.task();
-                if (this.repetTimes > 0)
-                {
-                    this.residueRepetTimes--;
-                    if (this.residueRepetTimes <= 0)
-                    {
-                        Scheduler.Instance.Stop(this);
-                    }
-                }
-                else if (this.repetTimes == -1)
-                {
-                    this.residueTime = this.delay;
-                }
-                else
-                {
-                    Scheduler.Instance.Stop(this);
-                }
-
             }
             catch (Exception e)
             {
                 Helper.LogError(e.ToString());
             }
+            if (this.repetTimes > 0)
+            {
+                this.residueRepetTimes--;
+                if (this.residueRepetTimes <= 0)
+                {
+                    return true;
+                }
+            }
+            else if (this.repetTimes == -1)
+            {
+                this.residueTime = this.delay;
+            }
+            else
+            {
+                return true;
+            }
         }
+        return false;
     }
 }
