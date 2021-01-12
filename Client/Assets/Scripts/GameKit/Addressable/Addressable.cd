@@ -8,7 +8,7 @@
       </MemberNameLabel>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>ACAAAACABAAAAAAAECAAAAAEAAEABAAgEAgCAQAAAAM=</HashCode>
+      <HashCode>ACAAAACABAAAAAAAUCAAAAAEAAEABAAgEAgCAQABACM=</HashCode>
       <FileName>Assets\Scripts\GameKit\Addressable\AddressableManager.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -28,8 +28,15 @@
       </Class>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAEAAAAACAAAAYgAAAAQCEAAAAAEEIAAAAAQAI=</HashCode>
+      <HashCode>AAAAQAAEAAAAACAAAAYgAAAAQCEAAAAAEEIAAABAAAo=</HashCode>
       <FileName>Assets\Scripts\GameKit\Addressable\AddressablePool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BuildTools">
+    <Position X="2.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEABgAACAAAAAAAAAAAEAAACAQAAACAAAAAAAEAA=</HashCode>
+      <FileName>Assets\Scripts\GameKit\Addressable\BuildTools.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="微软雅黑" Size="9" />
